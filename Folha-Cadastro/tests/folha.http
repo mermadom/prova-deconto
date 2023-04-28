@@ -1,0 +1,18 @@
+GET http://localhost:3000/folha/listar
+
+### Cadastrar folha
+POST http://localhost:3000/folha/cadastrar
+Content-Type: application/json
+
+{
+   "mes" : 5,
+   "ano" : 2030,
+   "horas" : 1000,
+   "valor" : 50,
+   "funcionario" :{
+    "nome" : "Diogo",
+    "cpf" : "123.456.789-00"
+   }
+}
+### Calcular folha
+GET  http://localhost:3000/folha/calcular
